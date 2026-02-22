@@ -13,23 +13,24 @@ function App() {
       <Routes>
         {/* Layout envolve todas as páginas */}
         <Route path="/" element={<Layout />}>
-          
-          {/* Página inicial - localhost:5173/ */}
+
+          {/* navegação entre paginas usando o Route biblioteca */}
+
           <Route index element={<Home />} />
           
-          {/* Página Sobre - localhost:5173/sobre */}
+         
           <Route path="sobre" element={<Sobre />} />
           
-          {/* Página FAQ - localhost:5173/faq */}
+         
           <Route path="faq" element={<FAQ />} />
           
-          {/* Página Contato - localhost:5173/contato */}
+          
           <Route path="contato" element={<Contato />} />
           
-          {/* Página Integrantes - localhost:5173/integrantes */}
+         
           <Route path="integrantes" element={<Integrantes />} />
           
-          {/* Página Roadmap - localhost:5173/roadmap */}
+          
           <Route path="roadmap" element={<Roadmap />} />
           
         </Route>
