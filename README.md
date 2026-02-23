@@ -26,7 +26,7 @@ Este projeto é um **MVP (Produto Mínimo Viável)** desenvolvido como Challenge
 
 ---
 
-## 🚀 Tecnologias
+## 🚀 Tecnologia
 
 - **React** - Biblioteca para construção de interfaces
 - **TypeScript** - Tipagem estática para JavaScript
