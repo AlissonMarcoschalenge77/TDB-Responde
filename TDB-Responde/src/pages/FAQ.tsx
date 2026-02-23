@@ -84,7 +84,7 @@ function FAQ() {
           Perguntas Frequentes
         </h2>
         <p className="text-gray-600 mt-2 text-2xl">
-          Tire suas dúvidas sobre o TDB Responde
+          Tire suas dúvidas sobre o <span className="text-blue-600">TDB Responde</span>
         </p>
       </section>
 

@@ -72,7 +72,7 @@ function Roadmap() {
       {/* Principal */}
       <section className="bg-blue-50 py-12 text-center">
         <h2 className="text-5xl font-bold text-gray-800 ">Roadmap</h2>
-        <p className="text-gray-600 mt-2 text-2xl">Evolução do projeto TDB Responde</p>
+        <p className="text-gray-600 mt-2 text-2xl">Evolução do projeto <span className="text-blue-600">TDB Responde</span></p>
       </section>
 
       {/* Timeline */}

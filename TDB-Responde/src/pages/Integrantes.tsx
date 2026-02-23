@@ -33,7 +33,7 @@ function Integrantes() {
       {/* Hero */}
       <section className="bg-blue-50 py-12 text-center">
         <h2 className="text-5xl font-bold text-gray-800">Nossa Equipe</h2>
-        <p className="text-gray-600 mt-2 text-2xl">Conheça os criadores do TDB Responde</p>
+        <p className="text-gray-600 mt-2 text-2xl">Conheça os criadores do <span className="text-blue-600">TDB Responde</span></p>
       </section>
 
       {/* Cards */}

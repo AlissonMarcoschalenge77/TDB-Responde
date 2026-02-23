@@ -19,7 +19,7 @@ function Sobre() {
       <section className="bg-blue-50 py-12 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-5xl font-bold text-gray-800 mb-2">
-            Conheça o TDB Responde
+            Conheça o <span className="text-blue-600">TDB Responde</span>
           </h2>
           <p className="text-gray-600 text-2xl">
             Um projeto nascido da necessidade de otimizar o atendimento
