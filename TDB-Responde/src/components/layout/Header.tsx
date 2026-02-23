@@ -6,7 +6,7 @@ function Header() {
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         
         {/* Logo TDB Responde + Texto esquerda - CLICÁVEL */}
-        <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+        <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity transition-transform duration-300 hover:scale-125">
           <img 
             src="/img/LogoTDB.png" 
             alt="Logo TDB" 
@@ -23,7 +23,7 @@ function Header() {
           href="https://turmadobem.org.br/" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+          className="flex items-center gap-3 hover:opacity-80 transition-opacity transition-transform duration-300 hover:scale-125"
         >
           <span className="text-xl">Em colaboração com:</span>
           <img 

@@ -23,7 +23,7 @@ function FAQ() {
     {
       question: "Quem pode usar o TDB Responde?",
       answer:
-        "Foi desenvolvido especificamente para atender às necessidades da equipe de voluntários da Turma do Bem.",
+        "Foi desenvolvido especificamente para atender às necessidades da equipe de voluntários e beneficiários da Turma do Bem.",
     },
     {
       question: "É gratuito?",
