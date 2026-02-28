@@ -13,7 +13,7 @@ function FAQ() {
     //<number | null>	Tipo: pode ser número (0, 1, 2...) ou null (nenhuma)
     //null	Valor inicial: nenhuma pergunta aberta
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
+  
   const faqs: FAQItem[] = [
     {
       question: "O que é o TDB Responde?",
@@ -131,4 +131,4 @@ function FAQ() {
   );
 }
 
-export default FAQ;
+  export default FAQ;

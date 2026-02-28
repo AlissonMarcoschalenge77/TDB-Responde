@@ -4,7 +4,7 @@ function NavBar() {
   //função para ler URL atual
   const location = useLocation();
   
-  //funçaõ para verificar o link se esta ativo ou não
+  //função para verificar o link se esta ativo ou não
   const isActive = (path: string) => {
       return location.pathname === path 
       ? 'text-blue-300 font-bold border-b-2 border-blue-300'  // Estilo ativo

@@ -1,3 +1,4 @@
+
 import Button from "../components/ui/Button";
 interface Member {
   name: string;
@@ -79,4 +80,4 @@ function Integrantes() {
   );
 }
 
-export default Integrantes;
+  export default Integrantes;
