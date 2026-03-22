@@ -1,6 +1,6 @@
 import Button from "../components/ui/Button";
 import FeatureCard from "../components/ui/FeatureCard";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 function Home() {
   // Lógica do Contador de Visitas Lembrando que o useState é para adicionar um estado a uma variavel
@@ -8,13 +8,13 @@ function Home() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      const totalSalvo = localStorage.getItem('tdb_visitas');
+      const totalSalvo = localStorage.getItem("tdb_visitas");
       const contagemAtual = totalSalvo ? parseInt(totalSalvo) : 0;
       const novaContagem = contagemAtual + 1;
-      localStorage.setItem('tdb_visitas', novaContagem.toString());
+      localStorage.setItem("tdb_visitas", novaContagem.toString());
       setVisitas(novaContagem);
     }, 0);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -23,22 +23,26 @@ function Home() {
     {
       icon: "⚡",
       title: "Mais Ágil",
-      description: "Responda aos atendimentos em tempo real, centralizando todas as comunicações.",
+      description:
+        "Responda aos atendimentos em tempo real, centralizando todas as comunicações.",
     },
     {
       icon: "❤️",
       title: "Mais Acolhedor",
-      description: "Humanize o atendimento com respostas personalizadas e humanizadas.",
+      description:
+        "Humanize o atendimento com respostas personalizadas e humanizadas.",
     },
     {
       icon: "🔗",
       title: "Integrado",
-      description: "Unifique WhatsApp, e-mail e redes sociais em um único sistema.",
+      description:
+        "Unifique WhatsApp, e-mail e redes sociais em um único sistema.",
     },
     {
       icon: "📊",
       title: "Organizado",
-      description: "Tenha controle total sobre todos os seus atendimentos e históricos.",
+      description:
+        "Tenha controle total sobre todos os seus atendimentos e históricos.",
     },
   ];
 
@@ -52,7 +56,7 @@ function Home() {
             <span className="text-sm font-medium text-blue-500 uppercase tracking-widest">
               Visitas à plataforma: {visitas}
             </span>
-            
+
             <h2 className="text-5xl font-bold text-gray-800 mt-4 mb-4">
               Bem-vindo ao <span className="text-blue-600">TDB Responde</span>
             </h2>
@@ -65,6 +69,13 @@ function Home() {
               </Button>
               <Button href="/sobre" variant="secondary" size="large">
                 Saiba Mais
+              </Button>
+              <Button
+                href="/quero-ser-voluntario"
+                variant="secondary"
+                size="large"
+              >
+                Quero ser voluntário
               </Button>
             </div>
           </div>
@@ -82,7 +93,7 @@ function Home() {
                 icon={feature.icon}
                 title={feature.title}
                 description={feature.description}
-                destaque={index === 0} 
+                destaque={index === 0}
               />
             ))}
           </div>
@@ -127,4 +138,4 @@ function Home() {
     </>
   );
 }
-  export default Home;
+export default Home;

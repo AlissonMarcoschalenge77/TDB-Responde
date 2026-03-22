@@ -18,7 +18,7 @@ function Contato() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
   
   const onSubmit = (data: FormData) => {
-    // Aqui seria legal enviar para um servidor, mas por enquanto ta só no console mesmo 😔
+    // Aqui seria legal enviar para um banco de dados, mas por enquanto ta só no console mesmo 😔
     console.log('Nome:', data.nome);
     console.log('Email:', data.email);
     console.log('Mensagem:', data.mensagem);

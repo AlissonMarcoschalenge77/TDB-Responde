@@ -1,41 +1,68 @@
+// src/App.tsx
+// Rotas atualizadas com sistema de autenticação.
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
 import Layout from './components/layout/Layout';
-import Contato from './pages/Contato'
-import Sobre from './pages/Sobre'
-import FAQ from './pages/FAQ';
+import ProtectedRoute from './components/ui/ProtectedRoute';
+
+// Páginas institucionais (já existiam)
 import Home from './pages/Home';
+import Sobre from './pages/Sobre';
+import FAQ from './pages/FAQ';
+import Contato from './pages/Contato';
 import Integrantes from './pages/Integrantes';
 import Roadmap from './pages/Roadmap';
 
+// Páginas novas
+import Login from './pages/Login';
+import DashboardAdmin from './pages/Dashboardadmin';
+import PortalBeneficiario from './pages/Portalbeneficiario ';
+import CadastroVoluntario from './pages/CadastroVoluntario';
+
 function App() {
   return (
-    <Router>
-      <Routes>
-        {/* Layout envolve todas as páginas */}
-        <Route path="/" element={<Layout />}>
+    // AuthProvider envolve tudo — contexto disponível em qualquer componente
+    <AuthProvider>
+      <Router>
+        <Routes>
 
-          {/* navegação entre paginas usando o Route biblioteca */}
+          {/* Rotas com Layout (Header + NavBar + Footer) */}
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="sobre" element={<Sobre />} />
+            <Route path="faq" element={<FAQ />} />
+            <Route path="contato" element={<Contato />} />
+            <Route path="integrantes" element={<Integrantes />} />
+            <Route path="roadmap" element={<Roadmap />} />
+            <Route path="login" element={<Login />} />
+            <Route path="quero-ser-voluntario" element={<CadastroVoluntario />} />
+          </Route>
 
-          <Route index element={<Home />} />
-          
-         
-          <Route path="sobre" element={<Sobre />} />
-          
-         
-          <Route path="faq" element={<FAQ />} />
-          
-          
-          <Route path="contato" element={<Contato />} />
-          
-         
-          <Route path="integrantes" element={<Integrantes />} />
-          
-          
-          <Route path="roadmap" element={<Roadmap />} />
-          
-        </Route>
-      </Routes>
-    </Router>
+          {/* Rotas protegidas — SEM o layout institucional (header/footer da ONG) */}
+          {/* Voluntário: painel de administração */}
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute requireVoluntario>
+                <DashboardAdmin />
+              </ProtectedRoute>
+            }
+          />
+
+          {/* Beneficiário: portal de acompanhamento */}
+          <Route
+            path="/portal"
+            element={
+              <ProtectedRoute>
+                <PortalBeneficiario />
+              </ProtectedRoute>
+            }
+          />
+
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 

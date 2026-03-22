@@ -14,7 +14,7 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-white p-6 text-center">
       <p className="mb-4">
-        &copy; 2025 TDB Responde | Criado com dedicação pela dupla Alisson e
+        &copy; 2026 TDB Responde | Criado com dedicação pela dupla Alisson e
         Marcos
       </p>
 
