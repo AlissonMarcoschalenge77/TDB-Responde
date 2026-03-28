@@ -11,6 +11,14 @@ Plataforma de atendimento centralizado desenvolvida para a ONG **Turma do Bem**,
 
 ---
 
+## 🎥 Pitch — Protótipo de Média Fidelidade
+
+> Demonstração do protótipo com base nas **10 Heurísticas de Nielsen** e nos **Fundamentos de UX Writing**.
+
+[![Assistir no YouTube](https://img.shields.io/badge/Assistir%20no%20YouTube-%23FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/qgpyiB0mFDw)
+
+---
+
 ## Sobre o Projeto
 
 O **TDB Responde** nasceu da necessidade real da ONG Turma do Bem, que recebia atendimentos por múltiplos canais (WhatsApp, e-mail, redes sociais) sem nenhuma centralização ou histórico. Casos urgentes se perdiam, voluntários respondiam em duplicidade e não havia como acompanhar a evolução de cada beneficiário.
@@ -172,6 +180,7 @@ Acesse `http://localhost:5173` no navegador.
 Para testar a captação de voluntários, acesse `/quero-ser-voluntario` sem login, preencha o formulário e depois entre como `ana.souza` para ver a inscrição na aba **Inscrições** do painel.
 
 Para resetar todos os dados durante a demonstração, execute no console do navegador:
+
 ```javascript
 localStorage.removeItem('tdb_sistema_v2');
 localStorage.removeItem('tdb_auth_user');
