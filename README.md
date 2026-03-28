@@ -13,7 +13,7 @@ Plataforma de atendimento centralizado desenvolvida para a ONG **Turma do Bem**,
 
 ## 🎥 Pitch — Protótipo de Média Fidelidade
 
-> Demonstração do protótipo com base nas **10 Heurísticas de Nielsen** e nos **Fundamentos de UX Writing**.
+> Demonstração do protótipo/MVP sem banco de dados.
 
 [![Assistir no YouTube](https://img.shields.io/badge/Assistir%20no%20YouTube-%23FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/qgpyiB0mFDw)
 
